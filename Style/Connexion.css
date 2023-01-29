@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+*::selection{
+    color: pink;
+    background-color: white;
+}
+body{
+    font-size: 25px;
+}
+.blur-area{
+    background-image: url(../RESSOURCES/pinkPattern.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px);
+    opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
+    z-index: -99;
+}
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.form-title{
+    font-size: 2.5em;
+}
+form{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: content;
+    width: 100%;
+    padding: 15px;
+    background-color: pink;
+    border-radius: 13px;
+    padding: 1em 5em;
+    transition: 0.3s ease;
+}
+form:hover{
+    transform: scale(1.01);
+    box-shadow: 5px 5px 5px grey;
+}
+form label{
+    align-self: start;
+}
+form input{
+    border-radius: 10px;
+    text-overflow: ellipsis;
+    padding: 4px;
+    margin: 1em;
+    transition: 0.3s ease;
+}
+input[name="delete"]{
+    display: inline-block;
+    background-color: violet;
+    border-radius: 8px;
+    border: 2px outset purple;
+    color: purple;
+    transition: 0.3s ease;
+}
+form input:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px grey;
+}
+form a{
+    color: purple;
+    text-decoration: none;
+}
+input[type="submit"]{
+    padding: .5em;
+}
+.KeepLogin{
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+.KeepLogin:hover{
+    transform: scale(1.1);
+    text-shadow: 5px 5px 5px grey;
+}
+.Redirect a{
+    font-size: 0.8em;
+    font-weight: 400;
+    color: purple;
+    text-decoration: none;
+    transition: 0.3s ease; 
+}
+.Redirect a:hover{
+    color:black;
+    transform: scale(1.1); 
+}
+.Redirect{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: content;
+}

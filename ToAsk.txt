@@ -1,0 +1,20 @@
+1. How to refresh or log out when the cookie/session are suspended ?
+
+        // ini_set("session.gc_maxlifetime",5);
+        // ini_set("session.cookie_lifetime",5);
+
+        // if(!(($_COOKIE["email"]&$_COOKIE["password"])
+        // and(($_SESSION["email"]&$_SESSION["password"]))) )
+        //     header("location:LogOut.php");
+
+2. Correct the JavaScript Synthax !
+
+    // Script/script.js
+
+    // echo '<script>
+    // alert("'.ucfirst($focus).' updated successfuly !");
+    // </script>';
+
+3. How (Is it possible) to clear just one column ?
+
+4. How to style a text with '...' ?

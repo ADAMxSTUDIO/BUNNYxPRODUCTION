@@ -1,0 +1,10 @@
+USE bunnyxproduction;
+GO;
+INSERT INTO Founders (name,about,pic) VALUES ('ADAM','ADAM, Web Master, now studying Web developement, Software engeneering & DataBase Managment in the 1<sup>st </sup> year of college','../RESSOURCES/Founders/Bedroom Pose 1.png');
+GO;
+INSERT INTO Founders (name,about,pic) VALUES ('CHEEZOMI','Content Creator, now studying Web developement, Software engeneering & DataBase Managment in the 1<sup>st </sup> year of college','../RESSOURCES/Founders/YouTube Thumbnails-15-0 july.png');
+GO;
+INSERT INTO Founders (name,about,pic) VALUES ('GHOST RIDER','ADAM, Web Master, now studying Web developement, Software engeneering & DataBase Managment in the 1<sup>st </sup> year of college','../RESSOURCES/Founders/Desert Pose.png');
+GO;
+INSERT INTO Founders (name,about,pic) VALUES ('SINGER','ADAM, Web Master, now studying Web developement, Software engeneering & DataBase Managment in the 1<sup>st </sup> year of college','../RESSOURCES/Founders/Pic On the stage.png');
+GO;

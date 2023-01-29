@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+*::selection{
+    color: pink;
+    background-color: white;
+}
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    min-width: 100vw;
+    padding: 1em;
+    background-color: rgb(255, 234, 250);
+    z-index: 99;
+}
+.logo>a{
+    color: violet;
+    font-size: 1.8em;
+    font-weight: 800;
+    text-decoration: none;
+}
+.logo>a:hover{
+    color: pink;
+}
+.logo span{
+    color:pink;
+}
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap :1.8em;
+}
+nav>a{
+    color: violet;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+nav>a:hover{
+    color: pink;
+    transform: scale(1.1);
+}
+.welcome{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 2em;
+}
+
+.main{
+    background-image: url("../RESSOURCES/BackgroundPinkSetUp.jpg");
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 13em;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    color: white;
+}
+.main-text>h1{
+    font-size: 1.8em;
+    font-weight: 600;
+    text-shadow: 1px 1.5px 1px pink;
+}
+.main-text>p{
+    font-size: 3.5em;
+    font-weight: 600;
+    color: pink;
+    text-shadow: 1px 1.5px 1px white;
+}
+.main-text span{
+    font-size: 0.5em;
+    font-weight: 800;
+    color: white;
+    text-shadow: 1px 1.5px 1px pink;
+}
+.main-btn>a{
+    color: white;
+    text-decoration: none;
+    background-color: pink;
+    border: 1px solid pink;
+    border-radius: 13px;
+    padding: 1.2em;
+    transition: 0.3s ease;
+}
+.main-btn>a:hover{
+    color: pink;
+    background-color: transparent;
+    transform: scale(1.1);
+}
+.main-links a{
+    color: white;
+    font-size: 1.5em;
+    padding-right: 1em;
+    transition: 0.3s ease;
+}
+.main-links a:hover{
+    color: pink;
+    transform: scale(1.1);
+}
+.section-title{
+    color: violet;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 2em 0;
+}
+.Founders{
+    background-color: rgb(255, 234, 250);
+}
+.Founders-cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: content;
+    padding: 0 12em;
+    padding-bottom: 10em;
+}
+.Founders-card{
+    background-image: url("../RESSOURCES/Founders/Bedroom\ Pose\ 1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15em;
+    height: 20em;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid white;
+    transition: 0.3s ease;
+}
+.Founders-cards-label{
+    padding-top: 5em;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.Founders-cards-description{
+    padding: 0 1em;
+    text-align: center;
+    font-size: 0.5em;
+}
+.Founders-card:hover{
+    color: pink;
+    transform: scale(1.1);
+    opacity: 0.8;
+    border: 3px pink double;
+}
+.Founders .Founders-card:nth-child(2){
+    background-position: center right;
+}
+.Founders .Founders-card:nth-child(3) .Founders-cards-label{
+    padding-top: 7em;
+    font-size: 1.8em;
+}
+.Founders .Founders-card:nth-child(2n){
+    border-color:violet;
+    position: relative;
+    top: 5em;
+}
+.Headphones,.Chairs{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.Headphones-cards,.Chairs-cards{
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: content;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12em;
+    padding-bottom: 10em; 
+}
+.headphones-card,.Chairs-card{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 15em;
+    min-height: 25em;
+    overflow: hidden ;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 13px;
+    background-color: rgb(255, 234, 250);
+    transition: 0.3s ease;
+}
+.headphones-card-image>img,.Chairs-card-image>img{
+    width: 100%;
+    border-radius: 13px;
+}
+.headphones-card-description,.Chairs-card-description{
+    overflow: hidden;
+    word-break: break-word;
+    text-overflow: ellipsis;
+    max-lines: 2;
+    line-clamp:2;
+    white-space: wrap;
+}
+.headphones-card-description p,.Chairs-card-description p{
+    overflow: hidden;
+    word-break: break-word;
+    text-overflow: ellipsis;
+    max-lines: 2;
+    line-clamp:2;
+    white-space: wrap;
+}
+.price{
+    margin-top: 1em;
+    color: violet;
+    text-align: center;
+}
+.price>span{
+    font-weight: 800;
+    font-size: 1.5em;
+}
+.headphones-card,.Chairs-card:hover{
+    background-color: white;
+    transform: scale(1.1);
+    opacity: 0.8;
+    border: 3px pink double;
+    box-shadow: 0 0 10px grey;
+}
+.connexion{
+    position: sticky;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: content;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: pink;
+}
+.connexion input{
+    border-radius: 10px;
+    text-overflow: ellipsis;
+    padding: 4px;
+    margin-right: 1em;
+}
+.connexion form a{
+    color: purple;
+    text-decoration: none;
+}
+/*  background-image: url(../RESSOURCES/pinkPattern.jpg);
+    background-size: cover;
+    background-position: center;*/
+.LogedIn{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: content;
+}
+.LogedIn a:nth-child(2){
+    display: inline-block;
+    background-color: violet;
+    padding: 0.2em 0.3em;
+    border-radius: 8px;
+    border: 2px outset purple;
+    color: purple;
+    font-weight: 400;
+    margin: 0 3em;
+    font-size: 0.9em;
+    transition: 0.3s ease;
+}
+.LogedIn a:nth-child(2):hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px grey;
+}
+.LogedIn a{
+    text-decoration: none;
+    color: black;
+}
+.LogedIn-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.LogedIn-content span{
+    color: purple;
+}
+.LogedIn-content>p{
+    display: inline;
+}
+.LogedIn-content-icon>img{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: 0.3s ease;
+    margin-right:1em;
+}
+.LogedIn-content:hover{
+    color: white;
+    transform: scale(1.1);
+}
+input{
+    transition: 0.3s ease;
+}
+input:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px grey;
+}
+#form-join{
+    transition: 0.3s ease;
+}
+#form-join:hover{
+    color:black;
+    font-weight: 800;
+    transform: scale(1.1);
+}
+div.animated-box{
+    position: relative;
+    width: 6em;
+    height: 6em;
+    background-color: white;
+    animation: animated-box 8s ease-in 0s infinite forwards;
+    border-radius: 20%;
+}
+@keyframes animated-box {
+    0%,100%{
+        left: 0;
+        box-shadow: 0 0 15px white;
+    }
+    50%{
+        left: 150px;
+        background-color: pink;
+        transform: rotate(90deg);
+        box-shadow: 0 0 0;
+    }
+}
+div.animated-box:hover{
+    transform: scale(1.5);
+    opacity: 0.8;
+}
+div.animated-circle{
+    position: relative;
+    width: 2em;
+    height: 2em;
+    background-color: pink;
+    animation: animated-circle 8s ease-in 0.5s infinite forwards;
+    border-radius: 50%;
+}
+div.animated-circle:hover{
+    transform: scale(1.5);
+    opacity: 0.8;
+}
+a:visited{
+    color: grey;
+}
+@keyframes animated-circle {
+    0%,100%{
+        left: 0px;
+        bottom: 0px;
+        box-shadow: 0 0 15px pink;
+    }
+    25%{
+        left: 300px;
+        bottom: 50px;
+    }
+    50%{
+        bottom: 0px;
+    }
+    75%{
+        bottom: 50px;
+        background-color: purple;
+    }
+}
+@media only screen  and (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    header{
+        flex-flow: column wrap;
+        font-size: 18px;
+    }
+    .main{
+        padding: 13px;
+        padding-top: 15em;
+    }
+    .Founders{
+        min-height: 300vh; 
+        font-size: 20px;
+    }
+    .Founders-cards{
+        flex-flow: column wrap;
+        padding: 0;
+        gap: 2em; 
+    }
+    .Founders .Founders-card:nth-child(2n){
+        top: 0;
+    }
+    .Headphones{
+        font-size: 15px;
+    }
+    .Headphones-cards{
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    .connexion label{
+        display: none;
+    }
+}
